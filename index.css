@@ -8,8 +8,8 @@
 }
 
 *{
-    padding: none;
-    margin: none;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
  
@@ -18,15 +18,16 @@ body{
     background-color: var(--Almost-White);
     font-family: 'Epilogue', sans-serif;
     Font-size: 18px;
- 
+    padding: 0;
+    margin: 0;
+    height: 100vh;
 }
 
 .main-container{
-/* display: flex;
-flex-direction: column; */
-padding: none;
+padding: 0;
+margin: 0;
 width: 100%;
-height: 100vh;
+/* height: 100vh; */
 }
 
 header{
@@ -36,7 +37,7 @@ header{
 
 .nav-container{
     display: flex;
-    padding: 0px;
+    padding: 0;
     flex-direction: row;
     justify-content:flex-start;
     width: 100%;
@@ -45,7 +46,7 @@ header{
 .nav-container img{
     height: 45px;
     margin-top: 20px;
-    margin-left: 5%;
+    margin-left: 10%;
     cursor: pointer;
 }
 
@@ -55,11 +56,11 @@ header{
     display: flex;
     flex-direction: row;
     white-space: nowrap;
+    padding-top: 2%;
 }
 
 #login{
-    margin-top: 0px;
-    margin-left: 25VW;
+    margin-left: 10vw;
 }
 
 
@@ -68,9 +69,9 @@ header{
 }
 
 #register{
-    /* margin-right: 5%; */
     white-space: nowrap;
-    border: 2px solid var(--Almost-White);
+    border: 2px solid var(--Medium-Gray);
+    border-radius:15px;
     padding: 10px;
 }
 
@@ -119,11 +120,11 @@ fill: var(--Almost-Black);
     display: none;
     position: absolute;
     padding-top: 2%;
-    width: 18%;
+    width: 15%;
     height:25% auto;
     border-radius: 10px;
     background-color: white;
-    margin-left: -10%;
+    /* margin-left: -5%; */
     margin-top: 18px;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2), 0px 0px 12px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -148,7 +149,7 @@ fill: var(--Almost-Black);
     display: none;
     position: absolute;
     padding-top: 2%;
-    width: 15%;
+    width: 10%;
     height:15% auto;
     border-radius: 10px;
     background-color: white;
@@ -180,17 +181,21 @@ fill: var(--Almost-Black);
 .main-content{
     position: relative;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     width: 100%;
     /* flex-wrap: wrap; */
-    padding: 5%;
+    /* padding: 5%; */
 }
 
 .para-div{
     position: relative;
     width: 50%;
     color: var(--Almost-Black);
-    margin: 2%;
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-top: 10%;
+    
 }
 
 .para-div h1{
@@ -200,6 +205,7 @@ font-size: 80px;
 .para-div p{
     color: var(--Medium-Gray);
     margin-bottom: 15%;
+    line-height: 2rem;
 }
 
 #learn-more{
@@ -243,8 +249,8 @@ font-size: 80px;
 @media only screen and (max-width: 810px){
 
     *{
-        padding: none;
-        margin: none;
+        padding: 0;
+        margin: 0;
         box-sizing: border-box;
     }
      
@@ -265,6 +271,7 @@ font-size: 80px;
     .logo-container{
         display: flex;
         justify-content: space-between;
+        
     }
 
     #menuClose{
@@ -383,37 +390,55 @@ font-size: 80px;
         flex-direction: column-reverse;
         justify-content: center;
         width: 100%;
-        padding: none;
-        margin: none;
+        padding: 0;
+        margin: 0;
     }
 
     .para-div{
         position: relative;
         width: min-content;
         color: var(--Almost-Black);
-        margin: 2%;
         text-align: center;
+        width: 100%;
+        padding-left: 0;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .para-div p{
+      line-height: 1.5rem;
     }
 
     .partner-div ul{
         position: relative;
         display: flex;
-        margin-top: 30%;
-        width: 80%;
+        margin-top: 15%;
+        margin-right: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+   
     }
 
     .partner-div ul li{
         list-style: none;
-        margin-left: 10px;
+        width: 100%;
+    }
+
+    .partner-div ul li img{
+        width: 70%;
     }
 
     .hero-image{
         position: relative;
-        width: 100%;
+        width: 100vw;
+        margin-right: 0;
     }
     
     .hero-image img{
-        width: 100%;
+        width: 90%;
         
     }
 
